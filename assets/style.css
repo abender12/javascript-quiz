@@ -1,0 +1,29 @@
+/* Global Stlying */
+* {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Button Stlying for all buttons */
+button{
+    box-sizing: border-box;
+    border: 1px solid purple;
+    background-color: purple;
+    border-radius: 10%;
+    color: white;
+}
+
+/* P element styling - larger font-size */
+p {
+    font-size: 20px;
+}
+
+/* Styling on the main container */
+.outside-container {
+    padding: 10px;
+}
+
+.top-box p {
+    float: right;
+}
