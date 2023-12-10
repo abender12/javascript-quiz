@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-/* Button Stlying for all buttons */
+/* All Button Elements */
 button{
     box-sizing: border-box;
     border: 1px solid purple;
@@ -14,16 +14,49 @@ button{
     color: white;
 }
 
-/* P element styling - larger font-size */
+/* All P Elements */
 p {
     font-size: 20px;
 }
 
-/* Styling on the main container */
+/* "Outer Container" */
 .outside-container {
     padding: 10px;
 }
 
+/* Top Box Section */
 .top-box p {
     float: right;
+}
+
+/* Inner Box Section */
+.inner-box {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Quiz Intro */
+.quiz-intro {
+    margin: 20px;
+}
+
+/* Quiz Questions */
+.quiz {
+    margin: 20px;
+}
+
+.quiz ul {
+    list-style-type: none;
+}
+
+/* Quiz Score Screen */
+.quiz-score {
+    text-align: center;
+    margin: 20px;
+}
+
+/* High Score Screen */
+.high-scores {
+    text-align: center;
+    margin: 20px;
 }
