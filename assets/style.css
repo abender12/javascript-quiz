@@ -6,7 +6,7 @@
 }
 
 /* All Button Elements */
-button{
+button {
     box-sizing: border-box;
     border: 1px solid purple;
     background-color: purple;
@@ -19,44 +19,3 @@ p {
     font-size: 20px;
 }
 
-/* "Outer Container" */
-.outside-container {
-    padding: 10px;
-}
-
-/* Top Box Section */
-.top-box p {
-    float: right;
-}
-
-/* Inner Box Section */
-.inner-box {
-    text-align: center;
-    margin: 20px;
-}
-
-/* Quiz Intro */
-.quiz-intro {
-    margin: 20px;
-}
-
-/* Quiz Questions */
-.quiz {
-    margin: 20px;
-}
-
-.quiz ul {
-    list-style-type: none;
-}
-
-/* Quiz Score Screen */
-.quiz-score {
-    text-align: center;
-    margin: 20px;
-}
-
-/* High Score Screen */
-.high-scores {
-    text-align: center;
-    margin: 20px;
-}
