@@ -1,3 +1,10 @@
+/* Variables */
+:root {
+    --btnColor: purple;
+    --btnHover: rgb(54, 6, 54);
+    --btnFont: white;
+}
+
 /* Global Stlying */
 * {
     font-family:'Times New Roman', Times, serif;
@@ -8,10 +15,16 @@
 /* All Button Elements */
 button {
     box-sizing: border-box;
-    border: 1px solid purple;
-    background-color: purple;
-    border-radius: 10%;
-    color: white;
+    border: 1px solid var(--btnColor);
+    background-color: var(--btnColor);
+    color: var(--btnFont);
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+
+button:hover {
+    color: var(--btnHover);
 }
 
 /* All P Elements */
@@ -19,3 +32,59 @@ p {
     font-size: 20px;
 }
 
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.view-scores {
+    font-size: 20px;
+    display: inline;
+    text-align: left;
+}
+
+.timer {
+    font-size: 20px;
+    display: inline;
+    text-align: right;
+    padding-right: 20px;
+}
+
+/* Quiz Intro */
+.quiz-intro {
+    text-align: center;
+    justify-content: center;
+}
+
+/* Questions */
+.questions {
+    text-align: center;
+    justify-content: center;
+}
+
+/* Quiz Finished */
+.quiz-finished {
+    text-align: center;
+    justify-content: center;
+}
+
+ol {
+    list-style-type: none;
+}
+
+/* High Scores */
+.high-scores-screen {
+    text-align: center;
+    justify-content: center;
+}
+
+/* Hidden and Show */
+.show {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
