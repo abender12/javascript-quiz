@@ -16,7 +16,7 @@
    </header>
 
 <!-- Quiz Intro w/ header, brief description/instructions, and a start quiz button -->
-   <section class="quiz-intro" class="show">
+   <section id="quiz-intro" class="show">
     <h1 class="welcome">JavaScript Quiz</h1>
     <p class="instructions">The goal of this quiz is to assess your knowledge of JavaScript. You have 1 minute to answer 5 questions. If you get the question incorrect, the timer subtracts 15 seconds. Press "Start Quiz" below to begin the quiz!</p>
     <button class="start-quiz">Start Quiz</button>
@@ -24,14 +24,14 @@
 
 
 <!-- Quiz Questions w/ header and ul of answer choices -->
-   <section class="questions" class="hidden">
+   <section id="questions" class="hidden">
     <h1 class="question-ask"></h1>
     <div id="answer-choices" class="answers-btn"></div>
    </section>
 
 
 <!-- Quiz finished screen w/ all done header, score based on seconds remaining, form to type your intials, and a submit btn to store high score -->
-   <section class="quiz-finished" class="hidden">
+   <section id="quiz-finished" class="hidden">
     <h1 class="end-screen">All Done!</h1>
     <form id="form-initials" class="initials">
         <p>Enter Initials:
@@ -42,7 +42,7 @@
 
 
 <!-- High Scores screen w/ a high scores header, a list of high scores, a go back button that takes you to the Quiz Intro screen, and a clear scores btn which removes all high scores -->
-   <section class="high-scores-screen" class="hidden">
+   <section id="high-scores-screen" class="hidden">
     <h1 class="high-scores">High Scores</h1>
     <ol class="high-scores-list"></ol>
     <button class="go-back">Go Back</button>

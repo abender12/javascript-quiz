@@ -53,19 +53,19 @@ header {
 }
 
 /* Quiz Intro */
-.quiz-intro {
+#quiz-intro {
     text-align: center;
     justify-content: center;
 }
 
 /* Questions */
-.questions {
+#questions {
     text-align: center;
     justify-content: center;
 }
 
 /* Quiz Finished */
-.quiz-finished {
+#quiz-finished {
     text-align: center;
     justify-content: center;
 }
@@ -75,7 +75,7 @@ ol {
 }
 
 /* High Scores */
-.high-scores-screen {
+#high-scores-screen {
     text-align: center;
     justify-content: center;
 }

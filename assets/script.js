@@ -1,51 +1,66 @@
-var quizIntro = document.querySelector("quiz-intro");
-var questions = document.querySelector("questions");
-var quizFinished = document.querySelector("quiz-finished");
-var highScoreScreen = document.querySelector("high-scores-screen");
-var initialsForm = document.querySelector("form-initals");
-var timer = document.querySelector("timer");
-var listHighScores = document.querySelector("high-scores-list");
-var correct = document.getElementById("correct");
-var wrong = document.getElementById("wrong");
-// Buttons
-var startBtn = document.querySelector("start-quiz");
-var goBackBtn = document.querySelector("go-back");
-var clearScoresBtn = document.querySelector("clear-scores");
-// Questions and Answers
-var questions = document.querySelector("question-ask");
-var answerBtns = document.querySelector("answers-btn");
-var score = 0;
-var timeLeft;
-var gameover
-timerEl.innerText = 0;
+// Variables
+var startBtn = document.querySelector(".start-quiz");
+var quizIntroSection = document.getElementById("quiz-intro");
+var timerEl = document.querySelector(".timer");
 
-// High Scores
-var highScores = [];
+var index = 0;
+var timeLeft = 59;
 
-// Randomize questions
-var shuffleQuestions
-var questionIndex = 0
-
-// Questions that can be asked and their answers
+// Array of questions
 var questionsAsked = [
-    {   q: 'Commonly used datat types DO NOT include:'
-        a: '3. alerts'
-        choices: [{choice: '1. strings'}, {choice: '2. booleans'}, {choice: '3. alerts'}, {choice: '4. numbers'},]
+    {
+        question: "insert question",
+        choices: ["answer 1", "answer 2", "answer 3", "answer 4"],
+        answer: "correct answer"
     },
-    {   q: 'The condition in an if / else statement is enclosed within ____.'
-        a: '2. curly braces'
-        choices: [{choice: '1. quotes'}, {choice: '2. curly braces'}, {choice: '3. paranthesis'}, {choice: '4. square brackets'},]
+    {
+        question: "insert question",
+        choices: ["answer 1", "answer 2", "answer 3", "answer 4"],
+        answer: "correct answer"
     },
-    {   q: 'Commonly used datat types DO NOT include:'
-        a: '3. alerts'
-        choices: [{choice: '1. strings'}, {choice: '2. booleans'}, {choice: '3. alerts'}, {choice: '4. numbers'},]
+    {
+        question: "insert question",
+        choices: ["answer 1", "answer 2", "answer 3", "answer 4"],
+        answer: "correct answer"
     },
-    {   q: 'Commonly used datat types DO NOT include:'
-        a: '3. alerts'
-        choices: [{choice: '1. strings'}, {choice: '2. booleans'}, {choice: '3. alerts'}, {choice: '4. numbers'},]
+    {
+        question: "insert question",
+        choices: ["answer 1", "answer 2", "answer 3", "answer 4"],
+        answer: "correct answer"
     },
-    {   q: 'Commonly used datat types DO NOT include:'
-        a: '3. alerts'
-        choices: [{choice: '1. strings'}, {choice: '2. booleans'}, {choice: '3. alerts'}, {choice: '4. numbers'},]
+    {
+        question: "insert question",
+        choices: ["answer 1", "answer 2", "answer 3", "answer 4"],
+        answer: "correct answer"
     },
 ]
+
+// Timer
+function countdown() {
+    var timeInterval = setInterval(function() {
+        if (timeLeft > 1) {
+            timerEl.textContent = timeLeft;
+            timeLeft--;
+        } else {
+            timerEl.textContent = "";
+            clearInterval(timeInterval);
+        }
+    }, 1000);
+}
+console.log(countdown());
+
+// Start Quiz - when the user clicks the start button, the timer starts, and the first question appears and the quiz intro disappears.
+function startQuiz() {
+    countdown ();
+    // First Question Appears
+
+    // Hide start text
+    document.getElementById("quiz-intro").classList.remove("show");
+    document.getElementById("quiz-intro").classList.add("hidden");
+}
+startBtn.addEventListener('click',startQuiz);
+
+// When the correct answer is clicked, correct shows up underneath and the next question appears.
+// When the wrong answer is clicked, wrong shows up underneath, 15 seconds is subtracted from the timer, and the next question appears.
+
+// The game ends when all questions are answered OR when the timer reaches 0.
