@@ -47,7 +47,7 @@ function countdown() {
         }
     }, 1000);
 }
-console.log(countdown());
+startBtn.addEventListener('click',startQuiz);
 
 // Start Quiz - when the user clicks the start button, the timer starts, and the first question appears and the quiz intro disappears.
 function startQuiz() {
