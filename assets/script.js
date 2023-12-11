@@ -9,29 +9,29 @@ var timeLeft = 59;
 // Array of questions
 var questionsAsked = [
     {
-        question: "insert question",
-        choices: ["answer 1", "answer 2", "answer 3", "answer 4"],
-        answer: "correct answer"
+        question: "Commonly used data types DO NOT include:",
+        choices: ["1. strings", "1. booleans", "3. alerts", "4. numbers"],
+        answer: "3. alerts"
     },
     {
-        question: "insert question",
-        choices: ["answer 1", "answer 2", "answer 3", "answer 4"],
-        answer: "correct answer"
+        question: "The condition in an if / else statement is enclosed within ____.",
+        choices: ["1. quotes", "2. curly braces", "3. parenthesis", "4. square brackets"],
+        answer: "2. curly braces"
     },
     {
-        question: "insert question",
-        choices: ["answer 1", "answer 2", "answer 3", "answer 4"],
-        answer: "correct answer"
+        question: "Arrays in JavaScript can be used to store ____.",
+        choices: ["1. numbers and strings", "2. other arrays", "3. booleans", "4. all of the above"],
+        answer: "4. all of the above"
     },
     {
-        question: "insert question",
-        choices: ["answer 1", "answer 2", "answer 3", "answer 4"],
-        answer: "correct answer"
+        question: "String values must be enclosed within ____ when being assigned to variables.",
+        choices: ["1. commas", "2. curly braces", "3. quotes", "4. parenthesis"],
+        answer: "3. quotes"
     },
     {
-        question: "insert question",
-        choices: ["answer 1", "answer 2", "answer 3", "answer 4"],
-        answer: "correct answer"
+        question: "A very useful tool used during development and debugging for printing content to the debugger is:",
+        choices: ["1. JavaScript", "2. terminal/bash", "3. for loops", "4. console log"],
+        answer: "4. console log"
     },
 ]
 
